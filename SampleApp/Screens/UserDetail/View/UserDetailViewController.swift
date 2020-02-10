@@ -26,11 +26,11 @@ class UserDetailViewController: UIViewController, UserDetailViewable {
     
   
     @objc func actionCall(_ sender: UIButton) {
-        callToPhone(phone: "1234567890")
+        callToPhone(phone: viewModel?.getPhone())
     }
     
     @objc func actionEmail(_ sender: UIButton) {
-        sendEmail(recipients: [""], subject: "", body: "", images: nil)
+        sendEmail(recipients: [viewModel?.getPhone()], subject: "", body: "", images: nil)
     }
 
 }

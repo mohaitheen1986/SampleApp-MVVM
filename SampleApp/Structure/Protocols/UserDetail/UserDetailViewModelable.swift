@@ -10,4 +10,6 @@ import UIKit
 
 protocol UserDetailViewModelable {
     init(view: UserDetailViewable?, model: UserViewModel?)
+    func getEmail() -> String?
+    func getPhone() -> String?
 }

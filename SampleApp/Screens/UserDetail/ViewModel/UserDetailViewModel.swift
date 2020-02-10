@@ -40,6 +40,13 @@ class UserDetailViewModel: UserDetailViewModelable {
         view?.profileImage?.kf.setImage(with: URL(string: self.viewModel!.profielLargeImageUrl), placeholder: nil, options: [.processor(processor)])
     }
     
+    func getEmail() -> String? {
+        return viewModel?.email
+    }
+        
+    func getPhone() -> String? {
+        return viewModel?.phone
+    }
     
 
 }
