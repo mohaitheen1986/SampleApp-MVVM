@@ -15,6 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //Init Injection
+        SwinInjector.setup()
+
+        
+        let nav = UINavigationController.init(rootViewController: (SwinInjector.defaultContainer.resolve(UserListViewable.self) as? UIViewController)!)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
+        
+        
         // Override point for customization after application launch.
         return true
     }
