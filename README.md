@@ -1,9 +1,12 @@
 # SampleApp-MVVM
 
 This is an example project to demonstrate dependency injection using SwinInject.
-value binding done through RxSwift
 
-![Screen Record](Assets/ScreenRecord.gif)
+Value binding done through RxSwift.
+
+Kingfisher Library used to show the User profile images.
+
+![Screen Record](Samples/sample.gif)
 
 ## Requirements
 
