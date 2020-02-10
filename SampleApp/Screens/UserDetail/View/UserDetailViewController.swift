@@ -30,7 +30,7 @@ class UserDetailViewController: UIViewController, UserDetailViewable {
     }
     
     @objc func actionEmail(_ sender: UIButton) {
-        sendEmail(recipients: [(viewModel?.getPhone())!], subject: "", body: "", images: nil)
+        sendEmail(recipients: [(viewModel?.getEmail())!], subject: "", body: "", images: nil)
     }
 
 }
